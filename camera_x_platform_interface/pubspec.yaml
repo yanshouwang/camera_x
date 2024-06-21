@@ -1,0 +1,26 @@
+name: camera_x_platform_interface
+description: "A common platform interface for the camera_x plugin."
+version: 0.0.1
+homepage: https://github.com/yanshouwang/camera_x
+repository: https://github.com/yanshouwang/camera_x
+issue_tracker: https://github.com/yanshouwang/camera_x/issues
+topics:
+  - camera
+  - camera-x
+funding:
+  - https://paypal.me/yanshouwang5112
+  - https://afdian.net/a/yanshouwang
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0

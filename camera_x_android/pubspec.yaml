@@ -1,0 +1,37 @@
+name: camera_x_android
+description: "Android implementation of the camera_x plugin."
+version: 0.0.1
+homepage: https://github.com/yanshouwang/camera_x
+repository: https://github.com/yanshouwang/camera_x
+issue_tracker: https://github.com/yanshouwang/camera_x/issues
+topics:
+  - camera
+  - camera-x
+funding:
+  - https://paypal.me/yanshouwang5112
+  - https://afdian.net/a/yanshouwang
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera_x_platform_interface:
+    path: ../camera_x_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  pigeon: ^20.0.1
+
+flutter:
+  plugin:
+    implements: camera_x
+    platforms:
+      android:
+        package: dev.hebei.camera_x_android
+        pluginClass: CameraXAndroidPlugin
+        dartPluginClass: CameraXAndroidPlugin
